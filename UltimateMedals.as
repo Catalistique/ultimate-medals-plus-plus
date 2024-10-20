@@ -4,7 +4,6 @@ bool showHeader = true;
 [Setting category="Medals" name="Show Personal Best"]
 bool showPbest = true;
 
-#if TMNEXT||MP4
 [Setting category="Medals" name="Show Champion"]
 bool showChampion = false;
 
@@ -169,7 +168,6 @@ Record@ pbest = Record(pbestText, 0, -1, "\\$0ff");
 array<Record@> times = {champion, warrior, author, gold, silver, bronze, pbest};
 
 bool campaignMap = false;
-#endif
 
 int timeWidth = 53;
 int deltaWidth = 60;

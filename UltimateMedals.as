@@ -93,6 +93,16 @@ string bronzeText = "Bronze";
 [Setting category="Display Text" name="Personal Best Text" description="Override names to be shown in the window."]
 string pbestText = "Pers. Best";
 
+/* Custom Colors */
+[Setting category="Colors" name="Positive Color"]
+vec3 positiveColor = vec3(255,119,119);
+
+[Setting category="Colors" name="Negative Color"]
+vec3 negativeColor = vec3(119,119,255);
+
+[Setting category="Colors" name="Neutral Color"]
+vec3 neutralColor = vec3(170,170,170);
+
 const array<string> medals = {
 	"\\$444" + Icons::Circle, // no medal
 	"\\$964" + Icons::Circle, // bronze medal
@@ -137,9 +147,11 @@ class Record {
 
 		int delta = other.time - this.time;
 		if (delta < 0 && showPbestDeltaNegative) {
-			UI::Text("\\$77f-" + Time::Format(delta * -1));
-		} else if (delta >= 0) {
-			UI::Text("\\$f77+" + Time::Format(delta));
+			UI::Text(Text::FormatOpenplanetColor(negativeColor/255.0) + "-" + Time::Format(delta * -1));
+		} else if (delta > 0) {
+			UI::Text(Text::FormatOpenplanetColor(positiveColor/255.0) + "+" + Time::Format(delta));
+		} else {
+			UI::Text(Text::FormatOpenplanetColor(neutralColor/255.0) + "0:00.000");
 		}
 	}
 	
@@ -307,7 +319,7 @@ void Render() {
 			if(showAuthorName) {
 				UI::TableNextRow();
 				UI::TableNextColumn();
-				string authorNameText = "\\$888by " + StripFormatCodes(map.MapInfo.AuthorNickName);
+				string authorNameText = "\\$888by " + Text::StripFormatCodes(map.MapInfo.AuthorNickName);
 				if (hasComment) {
 					authorNameText += " \\$68f" + Icons::InfoCircle;
 				}

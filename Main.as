@@ -114,7 +114,7 @@ void Main() {
 #if DEPENDENCY_WARRIORMEDALS
 	uint wm_time = WarriorMedals::GetWMTime();
 	if (wm_time == 0) {
-	    warrior.hidden = false;
+	    warriorActualVisibility = false;
 	} else {
 	    warrior.time = wm_time;
 	}

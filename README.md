@@ -1,9 +1,21 @@
-# [Ultimate Medals](https://openplanet.dev/plugin/ultimatemedals)
+# [Ultimate Medals++](https://openplanet.dev/plugin/ultimate_medal_plusplus)
 
-[![Version](https://img.shields.io/badge/dynamic/json?color=pink&label=Version&query=version&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F118)](https://openplanet.dev/plugin/ultimatemedals)
-[![Total Downloads](https://img.shields.io/badge/dynamic/json?color=green&label=Downloads&query=downloads&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F118)](https://openplanet.dev/plugin/ultimatemedals)
-![Tags 1](https://img.shields.io/badge/dynamic/json?color=blue&label=Game&query=tags%5B0%5D.name&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F118)
-![Tags 2](https://img.shields.io/badge/dynamic/json?color=blue&label=Game&query=tags%5B1%5D.name&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F118)
-![Tags 3](https://img.shields.io/badge/dynamic/json?color=blue&label=Game&query=tags%5B2%5D.name&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F118)
+All of your medals in one place!
 
-An OpenPlanet plugin to show medal times in Trackmania games
+This plugin is a fork of the [original Ultimate Medals plugin](https://openplanet.dev/plugin/ultimatemedals) by [Phlarx](https://openplanet.dev/u/phlarx). Please support them as well!
+
+This plugin only works with Trackmania 2020.
+
+## Medal supported
+- Champion medal
+- Warrior medal
+- Author medal
+- Gold medal
+- Silver medal
+- Bronze medal
+
+## Optional dependencies
+- [Champion Medals](https://openplanet.dev/plugin/championmedals) by [NaNInf](https://openplanet.dev/u/nan-inf)
+- [Warrior Medals](https://openplanet.dev/plugin/warriormedals) by [Ezio](https://openplanet.dev/u/ezio416)
+
+![Ultimate Medals++](./Images/Ultimate%20Medals++.png)

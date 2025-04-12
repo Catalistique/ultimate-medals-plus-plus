@@ -188,6 +188,7 @@ uint CalcMedal() {
 			return 0;
 		}
 	} else {
+		pbest.medalColor = "\\$0ff";
 		return 0;
 	}
 }
